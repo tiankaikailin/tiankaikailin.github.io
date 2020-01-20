@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="HTML,ASP,PHP,SQL">
+		<meta http-equiv="charset" content="iso-8859-1">
+		<meta http-equiv="expires" content="31 Dec 2008">
+		<title>Login</title>
+		
+		<style>
+			* {
+				margin: 0;
+				padding: 0
+			}
+			.wrap {
+				width: 100%;
+				height: 1000px;
+				position: relative;
+			}
+			.top{
+				margin: auto;
+				width: 800px;
+				height: 250px;
+				border: 2px solid white;
+				border-radius: 10px;
+			}
+			.top .top_title{
+				width: 575px;
+				height: 250px;
+				align-content: center;
+				float: left;
+			}
+			.top .top_title h1{
+				display: block;
+				margin-left: 100px;
+				margin-top: 80px;
+				font-size: 48px;
+			}
+			.top .top_logo img{
+				margin-top: 25px;
+				margin-right: 25px;
+				width: 200px;
+				height: 200px;
+				float: right;
+			}
+			.head {
+				margin: auto;
+				width: 1250px;
+				height: 450px;
+			}
+			.head .nav{
+				width: 1250px;
+				height: 50px;
+			}
+			.head .nav ul{
+				width: 1250px;
+				height: 50px;
+			}
+			.head .nav ul li{
+				list-style: none;
+				float: left;
+				border-right: 1px solid white;
+				text-align: center;
+			}
+			.head .nav ul li a{
+				width: 249px;
+				height: 50px;
+				display: block;
+				text-decoration: none;
+				font: 600 20px/50px "微软雅黑";
+				color: white;
+				background: rgba(0, 100, 0, 0.5);
+			}
+			.head .nav ul li:last-child{
+				border-right: 1px solid #696969;
+			}
+			.head .nav ul li a:hover{
+				color: #696969;
+				background-color: white;
+			}
+			.box {
+				width: 1250px;
+				height: 400px;
+				margin:auto;
+			}
+			.box img {
+				width: 1250px;
+				height: 400px;
+				vertical-align: top
+			}
+			.main{
+				width: 1250px;
+				height: 423px;
+				margin: 20px auto;
+				background: rgba(0, 100, 0, 0.3);
+			}
+			.left{
+				width: 250px;
+				height: 423px;
+				text-align: center;
+				float: left;
+				background: rgba(255,255,255,0.3);
+			}
+			.left img{
+				width: 100px;
+				height: 100px;
+				border-radius: 50px;
+				margin-top:120px ;
+			}
+			.left span{
+				display: block;
+				margin-top: 20px;
+			}
+			form{
+				width: 400px;
+				height: 400px;
+				margin-top: 40px;
+				margin-left:460px;
+				background-color: white;
+				padding: 10px;
+				box-shadow:1px 1px 1px 1px lightgray ;
+				border-radius: 3px;
+			}
+			form h2{
+				text-align: center;
+				display: block;
+				margin-top: 20px;
+				font: 600 24px/24px "微软雅黑";
+			}
+			form ul{
+				list-style: none;
+			}
+			form ul li{
+				width: 400px;
+				height: 50px;
+				padding: 10px;
+				position: relative;
+			}
+			form ul li span{
+				display: block;
+				margin-left: 20px;
+			}
+			form ul li input{
+				position: absolute;
+				left: 150px;
+				top: 10px;
+				width: 150px;
+				height: 20px;
+				border-radius: 2px;
+				box-shadow: 1px 1px 0px 0px #172991;
+				background-image:url(images/attention.png) ;
+				background-position: right;
+				background-repeat: no-repeat;
+				background-size: 5px 5px;
+				outline-style: none;
+				border: 1px solid grey;
+			}
+			.button{
+				border: 1px solid transparent;
+				margin-left: 175px;
+				width: 220px;
+			}
+			.button button{
+				width: 70px;
+				height: 30px;
+				background-color: #006400;
+				border: 1px solid #006400;
+				border-radius: 3px;
+			}
+			.button button a{
+				color: white;
+				text-decoration: none;
+			}
+			.button button:active{
+				border: 1px solid #228B22;
+				box-shadow: 0 0 10px 5px skyblue inset;
+			}
+			.button button:hover{
+				opacity: 0.85;
+				cursor: pointer;
+			}
+			.foot {
+				width: 100%;
+				height: 40px;
+				position: absolute;
+				bottom: 10px;
+				background: rgba(255, 255, 255, 0.1);
+			}
+			
+			.foot p {
+				text-align: center;
+				color: #808080;
+				font: 200 12px/20px "微软雅黑";
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="top">
+				<div class="top_title"><h1>Welcome to Sunny</h1></div>
+				<div class="top_logo"><img src="images/logo.png" alt=""></div>
+			</div>
+			<div class="head">
+				<div class="nav">
+					<ul>
+						<li><a href="index.html">index</a></li>
+						<li><a href="food.html">food</a></li>
+						<li><a href="tour.html">tour</a></li>
+						<li><a href="introduce.html">introduce</a></li>
+						<li><a href="login.html">login</a></li>
+					</ul>
+				</div>
+				<div class="box" id="box">
+					<img src="images/2.jpg" >
+				</div>
+			</div>
+			<div class="main">
+				<div class="left">
+					<img src="images/me.jpg" >
+					<span>Welcome to my website，please login!</span>
+				</div>
+				<form>
+					<h2>login</h2><br><br><br><br>
+					<ul>
+						<li>
+							<span>name：</span>
+							<input type="text" id="name" name="name" required />
+						</li>
+						<li>
+							<span>Password：</span>
+							<input type="password" name="password" value="" required />
+						</li>
+						<div class="button">
+							<button type="submit"><a href="index.html">Login</a></button>
+						</div>
+					</ul>
+				</form>
+			</div>
+			<div class="foot">
+				<p>XinJiang</p>
+			</div>
+		</div>
+	</body>
+</html>

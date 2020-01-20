@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="HTML,ASP,PHP,SQL">
+		<meta http-equiv="charset" content="iso-8859-1">
+		<meta http-equiv="expires" content="31 Dec 2008">
+		<title>首页</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0
+			}
+			.wrap {
+				width: 100%;
+				height: 800px;
+				position: relative;
+			}
+			.top{
+				margin: auto;
+				width: 800px;
+				height: 250px;
+				border: 2px solid white;
+				border-radius: 10px;
+			}
+			.top .top_title{
+				width: 575px;
+				height: 250px;
+				align-content: center;
+				float: left;
+			}
+			.top .top_title h1{
+				display: block;
+				margin-left: 100px;
+				margin-top: 80px;
+				font-size: 48px;
+			}
+			.top .top_logo img{
+				margin-top: 25px;
+				margin-right: 25px;
+				width: 200px;
+				height: 200px;
+				float: right;
+			}
+			.head {
+				margin: auto;
+				width: 1250px;
+				height: 450px;
+			}
+			.head .nav{
+				width: 1250px;
+				height: 50px;
+			}
+			.head .nav ul{
+				width: 1250px;
+				height: 50px;
+			}
+			.head .nav ul li{
+				list-style: none;
+				float: left;
+				border-right: 1px solid white;
+				text-align: center;
+			}
+			.head .nav ul li a{
+				width: 249px;
+				height: 50px;
+				display: block;
+				text-decoration: none;
+				font: 600 20px/50px "微软雅黑";
+				color: white;
+				background: rgba(0, 100, 0, 0.5);
+			}
+			.head .nav ul li:last-child{
+				border-right: 1px solid #696969;
+			}
+			.head .nav ul li a:hover{
+				color: #696969;
+				background-color: white;
+			}
+			.box {
+				width: 1250px;
+				height: 400px;
+				margin:auto;
+			}
+			.box img {
+				width: 1250px;
+				height: 400px;
+				vertical-align: top
+			}
+			.main{
+				width: 1250px;
+				height: 250px;
+				margin: 20px auto;
+				background: rgba(255, 255, 255, 0.3);
+			}
+			.left{
+				width: 250px;
+				height: 250px;
+				background-color: rgba(0,100,0,0.3);
+				float: left;
+			}
+			.left ul li{
+				width: 250px;
+				height: 49px;
+				list-style: none;
+				text-align: center;
+				color: white;
+				line-height: 50px;
+				border-bottom: 1px dashed white;
+			}
+			.left ul li:hover{
+				background-color: white;
+				color: #006400;
+			}
+			.right{
+				width: 960px;
+				height: 250px;
+				float: right;
+				background-color: rgba(0,100,0,0.3);
+			}
+			.right img{
+				width: 240px;
+				height: 250px;
+				float: left;
+			}
+			.foot {
+				width: 100%;
+				height: 40px;
+				position: absolute;
+				bottom: 10px;
+				background: rgba(255, 255, 255, 0.1);
+			}
+			
+			.foot p {
+				text-align: center;
+				color: #808080;
+				font: 200 12px/20px "微软雅黑";
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="top">
+				<div class="top_title"><h1>Welcome to Sunny</h1></div>
+				<div class="top_logo"><img src="images/logo.png" alt=""></div>
+			</div>
+			<div class="head">
+				<div class="nav">
+					<ul>
+						<li><a href="index.html">index</a></li>
+						<li><a href="food.html">food</a></li>
+						<li><a href="tour.html">tour</a></li>
+						<li><a href="introduce.html">introduce</a></li>
+						<li><a href="login.html">login</a></li>
+					</ul>
+				</div>
+				<div class="box" id="box">
+					<img src="images/5.jpg" >
+				</div>
+			</div>
+			<div class="main">
+				<div class="left">
+					<ul>
+						<li>新疆大盘鸡 Xinjiang big plate chicken</li>
+						<li>新疆抓饭 Xinjiang hand pilaf</li>
+						<li>馕 Called naan</li>
+						<li>烤包子 Bake the steamed stuffed bun</li>
+						<li>拉条子 LaTiaozi</li>
+					</ul>
+				</div>
+				<div class="right">
+					<img src="images/food%20(1).jpg" >
+					<img src="images/food%20(2).jpg" >
+					<img src="images/food%20(3).jpg" >
+					<img src="images/food%20(4).jpg" >
+				</div>
+			</div>
+			<div class="foot">
+				<p>XinJing</p>
+			</div>
+		</div>
+	</body>
+</html>
